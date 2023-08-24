@@ -1,0 +1,48 @@
+.a, .c {
+    display: flex;
+    justify-content: center;
+    column-gap: 170px;
+}
+
+.b {
+    display: flex;
+    column-gap: 160px;
+}
+
+.b > button {
+    position: absolute;
+    top: 25%;
+}
+
+.b > button:nth-child(1) {
+    left: 26%;
+}
+
+
+.b > button:nth-child(2) {
+    left: 33%;
+}
+
+.b > button:nth-child(3) {
+    left: 53%;
+}
+
+.b> button:nth-child(4) {
+    left: 68%;
+}
+
+.b> button:nth-child(5) {
+    left: 72%;
+}
+
+.save-dots-btn {
+    background: #0050a2;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    font-size: 32px;
+    color: whitesmoke;
+    cursor: pointer;
+}

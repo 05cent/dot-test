@@ -1,14 +1,8 @@
-import { useState } from 'react'
-import './App.css'
+import Plugin from './components/Plugin';
+import { AppProps } from './types';
 
-function App() {
-  const [count, setCount] = useState(0)
+import './App.css';
 
-  return (
-    <>
+const App = ({ options }: AppProps) => <Plugin options={options} />;
 
-    </>
-  )
-}
-
-export default App
+export default App;

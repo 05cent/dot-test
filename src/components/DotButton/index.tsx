@@ -1,15 +1,18 @@
-﻿import { ButtonProps } from "./type";
+﻿import { ButtonProps } from "./types";
 
 import './index.css';
 
-const DotButton = ({ children, style, onComplete, className, active }: ButtonProps) => (
-    <button
-        className={className || "button"}
-        style={{ background: active === undefined ? '#0050a2' : active ? '#ffffff' : '#f64900', ...style }}
-        onClick={active ? onComplete : undefined}
-    >
-        {children}
-    </button>
-);
+const DotButton = ({ children, style, onPositionChange, active }: ButtonProps) => {
+    console.log(active);
+    return (
+        <button
+            className={"button"}
+            style={{ background: active ? '#ffffff' : '#f64900', ...style }}
+            onClick={onPositionChange}
+        >
+            {children}
+        </button>
+    );
+}
 
 export default DotButton;
